@@ -7,6 +7,8 @@ workflows:
       node: $NODE_VERSION
     scripts:
       - |
+        corepack enable
+        corepack prepare yarn@4.9.2 --activate
         yarn install
         yarn build
         cd samples/app/android
