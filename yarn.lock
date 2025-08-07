@@ -2122,7 +2122,7 @@ __metadata:
     react-native-bouncy-checkbox: "npm:~3.0.7"
     react-native-builder-bob: "npm:~0.21.3"
     react-native-collapsible: "npm:~1.6.2"
-    react-native-config: "npm:~1.5.5"
+    react-native-config: "npm:~1.5.6"
     react-native-confirmation-code-field: "npm:~7.3.2"
     react-native-device-info: "npm:~8.7.1"
     react-native-encrypted-storage: "npm:~4.0.3"
@@ -2199,7 +2199,7 @@ __metadata:
     react-native-argon2: ~2.0.1
     react-native-bouncy-checkbox: ~3.0.7
     react-native-collapsible: ~1.6.2
-    react-native-config: ~1.5.5
+    react-native-config: ~1.5.6
     react-native-confirmation-code-field: ~7.3.2
     react-native-device-info: ~8.7.1
     react-native-encrypted-storage: ~4.0.3
@@ -8564,7 +8564,7 @@ __metadata:
     react-native-argon2: "npm:~2.0.1"
     react-native-bouncy-checkbox: "npm:~3.0.7"
     react-native-collapsible: "npm:~1.6.2"
-    react-native-config: "npm:~1.5.5"
+    react-native-config: "npm:~1.5.6"
     react-native-confirmation-code-field: "npm:~7.3.2"
     react-native-device-info: "npm:~8.7.1"
     react-native-encrypted-storage: "npm:~4.0.3"
@@ -18067,15 +18067,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-config@npm:~1.5.5":
-  version: 1.5.5
-  resolution: "react-native-config@npm:1.5.5"
+"react-native-config@npm:~1.5.6":
+  version: 1.5.6
+  resolution: "react-native-config@npm:1.5.6"
   peerDependencies:
     react-native-windows: ">=0.61"
   peerDependenciesMeta:
     react-native-windows:
       optional: true
-  checksum: 10c0/8fa0b1202b9a7daee4c41ef95baa7adc70fdcaeb4d604dace9ff0c47963d96879b66720cc4e77557a99dacd71453ac99c4607bc2a24ea37e274c4d6d39dab18e
+  checksum: 10c0/373d1e1e3ac8ef04e863ff4ca37a0825b5d8d9f5359a8fe003047be5fdb6c136f4151cce416169b42b5b8ddcd291b82cb25079ee610f1c8098ad5c6a519e6d65
   languageName: node
   linkType: hard
 
