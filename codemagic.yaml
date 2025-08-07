@@ -1,20 +1,17 @@
 workflows:
-  build-android-apk:
-    name: ASTI-WALLET Android APK Build
+  build-bifold:
+    name: ASTI WALLET V3 - Bifold Build
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+    triggering:
+      events:
+        - push
+        - pull_request
     environment:
-      vars:
-        NODE_VERSION: 20
-      node: $NODE_VERSION
+      flutter: stable
     scripts:
-      - |
-        brew install watchman
-        brew install nvm
-        nvm install 20.19.2
-        corepack enable
-        corepack prepare yarn@4.9.2 --activate
-        yarn install
-        yarn build
-        cd samples/app/android
-        ./gradlew assembleRelease
-    artifacts:
-      - samples/app/android/app/build/outputs/**/*.apk
+      - name: Install dependencies
+        script: yarn install
+      - name: Run Android build
+        script: yarn android:build
+
