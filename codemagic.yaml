@@ -8,10 +8,17 @@ workflows:
         - push
         - pull_request
     environment:
-      flutter: stable
+       vars:
+        NODE_VERSION: 20
+        node: $NODE_VERSION
     scripts:
       - name: Install dependencies
         script: yarn install
       - name: Run Android build
         script: yarn android:build
-
+      - name: Build Android APK
+        script: echo "Building Android APK..."
+                cd samples/app/android
+                ./gradlew assembleRelease
+    artifacts:
+      - samples/app/android/app/build/outputs/**/*.apk
