@@ -1,5 +1,11 @@
 # @bifold/core
 
+## 2.4.1
+
+### Patch Changes
+
+- d748b6c: pincreate screen views no longer keyboard avoiding
+
 ## 2.4.0
 
 ### Minor Changes
