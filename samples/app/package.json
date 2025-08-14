@@ -20,7 +20,7 @@
   "dependencies": {
     "@bifold/core": "2.4.0",
     "@bifold/oca": "2.4.0",
-    "@credo-ts/anoncreds": "0.5.13",
+    "@credo-ts/anoncreds": "0.5.16",
     "@credo-ts/askar": "0.5.13",
     "@credo-ts/core": "0.5.13",
     "@credo-ts/indy-sdk-to-askar-migration": "0.5.13",
