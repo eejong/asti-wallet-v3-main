@@ -1,0 +1,21 @@
+workflows:
+  build-android-apk:
+    name: ASTI-WALLET Android APK Build
+    environment:
+      vars:
+        NODE_VERSION: 20
+      node: $NODE_VERSION
+    scripts:
+      - name: Install dependencies and build JS
+        script: |
+          yarn install
+          yarn build
+      - name: Set gradlew executable
+        script: |
+          chmod +x samples/app/android/gradlew
+      - name: Build Android release APK
+        script: |
+          cd samples/app/android
+          ./gradlew assembleRelease
+    artifacts:
+      - samples/app/android/app/build/outputs/**/*.apk
